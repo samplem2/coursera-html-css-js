@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+h1 {
+	margin-bottom: 15px;
+	text-align: center;
+}
+h2 {
+	float: right;
+	text-align: center;
+	width: 200px;
+	height: 30px;
+	border: 1px solid black;
+	margin: 0px;
+}
+/* for title of submenus */
+#p1 {
+	background-color: #800000;
+	color: white;
+}
+#p2 {
+	background-color: #000000;
+	color: white;
+}
+#p3 {
+	background-color: #0000FF;
+	color: white;
+}
+/* for the description of the submenus */
+#p4 {
+	float: left;
+	color: black;
+	height: relative;
+	font-family: Helvetica;
+	text-align: left;
+	font-size: larger;
+	margin: 3%;
+}
+/* Simple Responsive Framework */
+.main {
+	width: 100%;
+}
+/* Desktop device */
+@media (min-width: 992px) {
+	.sub1, .sub2, .sub3 {
+		float: left;
+		border: 1px solid black;
+		margin-right: 2%;
+		margin-bottom: 2%;
+		background-color: gray;
+	}
+	.sub1 {
+		width: 31%;
+	}
+	.sub2 {
+		width: 31%;
+	}
+	.sub3 {
+		width: 31%;
+	}
+}/* media Desktop end */
+
+/* Tablet device */
+@media (min-width: 768px) and (max-width: 991px) {
+	.sub1, .sub2, .sub3 {
+		float: left;
+		border: 1px solid black;
+		margin-right: 2%;
+		margin-bottom: 2%;
+		background-color: yellow;
+	}
+	.sub1 {
+		width: 48%;
+	}
+	.sub2 {
+		width: 48%;
+	}
+	.sub3 {
+		width: 98%;
+	}
+}/* media Tablet end */
+
+/* Mobile device */
+@media (max-width: 767px) {
+	.sub1, .sub2, .sub3 {
+		float: left;
+		border: 1px solid black;
+		margin: 1%;
+		background-color: pink;
+	}
+	.sub1 {
+		width: 98%;
+	}
+	.sub2 {
+		width: 98%;
+	}
+	.sub3 {
+		width: 98%;
+	}
+} /* media Mobile end */
